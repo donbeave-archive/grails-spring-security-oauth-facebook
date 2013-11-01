@@ -15,10 +15,10 @@ class SpringSecurityOauthFacebookGrailsPlugin {
     def author = "Mihai Cazacu, Enrico Comiti, Alexey Zhokhov"
     def authorEmail = "donbeave@gmail.com"
     def description = '''\
-Integrate [VK|http://www.vk.com] to [Spring Security OAuth plugin|http://grails.org/plugin/spring-security-oauth].
+Integrate [Facebook|http://www.facebook.com] to [Spring Security OAuth plugin|http://grails.org/plugin/spring-security-oauth].
 '''
 
-    def documentation = "https://github.com/donbeave/grails-spring-security-oauth-vkontakte"
+    def documentation = "https://github.com/donbeave/grails-spring-security-oauth-facebook"
 
     def license = "APACHE"
 
@@ -27,6 +27,6 @@ Integrate [VK|http://www.vk.com] to [Spring Security OAuth plugin|http://grails.
         [name: "Enrico Comiti", email: "enrico@comiti.name"],
         [name: "Alexey Zhokhov", email: "donbeave@gmail.com"]]
 
-    def scm = [url: 'https://github.com/donbeave/grails-spring-security-oauth-vkontakte']
+    def scm = [url: 'https://github.com/donbeave/grails-spring-security-oauth-facebook']
 
 }
