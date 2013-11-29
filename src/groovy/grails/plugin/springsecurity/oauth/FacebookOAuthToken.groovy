@@ -22,7 +22,9 @@ import org.scribe.model.Token
  * Spring Security authentication token for Facebook users. It's a standard {@link OAuthToken}
  * that returns the Facebook name as the principal.
  *
- * @author Mihai CAZACU(cazacugmihai@gmail.com)
+ * @author <a href='mailto:cazacugmihai@gmail.com'>Mihai Cazacu</a>
+ * @author <a href='mailto:enrico@comiti.name'>Enrico Comiti</a>
+ * @author Thierry Nicola
  */
 class FacebookOAuthToken extends OAuthToken {
 
@@ -37,6 +39,10 @@ class FacebookOAuthToken extends OAuthToken {
     }
 
     String getSocialId() {
+        return profileId
+    }
+
+    String getScreenName() {
         return profileId
     }
 
