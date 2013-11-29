@@ -7,9 +7,6 @@ class SpringSecurityOauthFacebookGrailsPlugin {
     def version = "0.1"
     def grailsVersion = "1.2.2 > *"
     def dependsOn = [springSecurityOauth: '2.0.2 > *']
-    def pluginExcludes = [
-        "grails-app/views/error.gsp"
-    ]
 
     def title = "Facebook for Spring Security OAuth plugin"
     def author = "Mihai Cazacu, Enrico Comiti, Alexey Zhokhov"
