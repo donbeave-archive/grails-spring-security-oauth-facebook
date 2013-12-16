@@ -1,4 +1,4 @@
-grails-spring-security-oauth-facebook
+grails-spring-security-oauth-facebook [![Build Status](https://api.travis-ci.org/donbeave/grails-spring-security-oauth-facebook.png?branch=master)](https://travis-ci.org/donbeave/grails-spring-security-oauth-facebook)
 ====================================
 
 Facebook extension for [Grails Spring Security OAuth][spring-security-oauth-plugin] plugin
