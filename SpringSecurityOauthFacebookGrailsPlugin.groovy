@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import grails.util.Environment
 
 /**
  * @author <a href='mailto:cazacugmihai@gmail.com'>Mihai Cazacu</a>
@@ -44,5 +45,24 @@ Integrate [Facebook|http://www.facebook.com] to [Spring Security OAuth plugin|ht
     def issueManagement = [system: 'GITHUB',
                            url   : 'https://github.com/donbeave/grails-spring-security-oauth-facebook/issues']
     def scm = [url: 'https://github.com/donbeave/grails-spring-security-oauth-facebook']
+
+    def loadAfter = ['spring-security-oauth']
+
+    def doWithSpring = {
+        loadConfig(application.config)
+    }
+
+    private void loadConfig(ConfigObject config) {
+        def classLoader = new GroovyClassLoader(getClass().classLoader)
+
+        // Note here the order of objects when calling merge - merge OVERWRITES values in the target object
+        // Load default config as a basis
+        def newConfig = new ConfigSlurper(Environment.current.name).parse(
+                classLoader.loadClass('DefaultFacebookOauthConfig')
+        )
+
+        // Now merge DefaultFacebookOauthConfig into the main config
+        config.merge(newConfig)
+    }
 
 }
