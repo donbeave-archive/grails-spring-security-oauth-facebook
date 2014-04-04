@@ -22,7 +22,7 @@ import grails.util.Environment
  */
 class SpringSecurityOauthFacebookGrailsPlugin {
 
-    def version = '0.1'
+    def version = '0.2'
     def grailsVersion = '1.2.2 > *'
 
     def title = 'Facebook for Spring Security OAuth plugin'
