@@ -17,7 +17,6 @@ package grails.plugin.springsecurity.oauth
 
 import org.scribe.model.Token
 
-
 /**
  * Spring Security authentication token for Facebook users. It's a standard {@link OAuthToken}
  * that returns the Facebook name as the principal.
@@ -28,7 +27,7 @@ import org.scribe.model.Token
  */
 class FacebookOAuthToken extends OAuthToken {
 
-    public static final String PROVIDER_NAME = "facebook"
+    public static final String PROVIDER_NAME = 'facebook'
 
     String profileId
 
