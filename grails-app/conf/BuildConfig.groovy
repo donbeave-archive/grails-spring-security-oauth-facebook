@@ -13,6 +13,7 @@ grails.project.dependency.resolution = {
         mavenLocal()
         mavenCentral()
         mavenRepo 'http://repo.spring.io/milestone'
+        mavenRepo 'https://raw.github.com/fernandezpablo85/scribe-java/mvn-repo'
     }
     dependencies {
     }
