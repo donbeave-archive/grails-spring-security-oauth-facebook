@@ -18,7 +18,16 @@ log4j = {
 environments {
   test {
     oauth {
-      providers {}
+      providers {
+        facebook {
+            api = org.scribe.builder.api.FacebookApi
+            key = 'oauth_facebook_key'
+            secret = 'oauth_facebook_secret'
+            successUri = '/oauth/facebook/success'
+            failureUri = '/oauth/facebook/failure'
+            callback = "/oauth/facebook/callback"
+        }
+      }
     }
   }
 }
