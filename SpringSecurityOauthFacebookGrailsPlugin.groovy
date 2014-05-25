@@ -60,6 +60,8 @@ Integrate [Facebook|http://www.facebook.com] to [Spring Security OAuth plugin|ht
                 classLoader.loadClass('DefaultFacebookOauthConfig')
         )
 
+        newConfig.oauth.providers.facebook.merge(config.oauth.providers.facebook)
+
         // Now merge DefaultFacebookOauthConfig into the main config
         config.merge(newConfig)
     }
