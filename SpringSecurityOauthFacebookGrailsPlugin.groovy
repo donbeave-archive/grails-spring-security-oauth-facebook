@@ -23,7 +23,8 @@ import grails.util.Environment
 class SpringSecurityOauthFacebookGrailsPlugin {
 
     def version = '0.2'
-    def grailsVersion = '1.2.2 > *'
+    def grailsVersion = '2.0 > *'
+    def loadAfter = ['springSecurityOauth']
 
     def title = 'Facebook for Spring Security OAuth plugin'
     def author = 'Mihai Cazacu, Enrico Comiti, Alexey Zhokhov'
@@ -45,8 +46,6 @@ Integrate [Facebook|http://www.facebook.com] to [Spring Security OAuth plugin|ht
     def issueManagement = [system: 'GITHUB',
                            url   : 'https://github.com/donbeave/grails-spring-security-oauth-facebook/issues']
     def scm = [url: 'https://github.com/donbeave/grails-spring-security-oauth-facebook']
-
-    def loadAfter = ['spring-security-oauth']
 
     def doWithSpring = {
         loadConfig(application.config)
