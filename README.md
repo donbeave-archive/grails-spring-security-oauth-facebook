@@ -48,4 +48,10 @@ Logged with facebook?
 <s2o:ifNotLoggedInWith provider="facebook">no</s2o:ifNotLoggedInWith>
 ```
 
+Copyright and license
+---------------------
+
+Copyright 2012-2014 Mihai Cazacu, Enrico Comiti and Alexey Zhokhov under the [Apache License, Version 2.0](LICENSE). Supported by [Polusharie][polusharie].
+
+[polusharie]: http://www.polusharie.com
 [spring-security-oauth-plugin]: https://github.com/enr/grails-spring-security-oauth
